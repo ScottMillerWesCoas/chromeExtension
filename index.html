@@ -1,1 +1,36 @@
-hello COle! 
+
+<!--CHROME API SEND MESSAGE - THEN RUN WITH THAT -->
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+    function othername() {
+    input = document.getElementById("testing").value;
+    var myWindow = window.open("http://www.editpad.org", "", "width=400,height=400,top=500, left=50");
+}
+</script>
+<script src='background.js'></script>
+
+<link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+<style type="text/css">
+    body {
+         font-family: 'Oswald';
+    }
+    input {
+        font-family: 'Oswald';
+        font-size: 20px; 
+}
+</style>
+</head>
+<body>
+<!-- <div id='text'>
+<h3>Whaddya wanna know?</h3>
+</div> -->
+<form onsubmit="othername()">
+ <input type="text" id="testing" name="search" placeholder="...whaddya wanna know?" padding-left="5px"><br><br>
+</form>
+
+
+</body>
+</html>

@@ -8,25 +8,29 @@
         "default_icon": "icon.png",
         "default_popup": "mypopup.html"
     },
+
+"browser_action": {
+    "default_icon": "icon.png"
+},
+
+"background": {
+    "scripts": ["background.js"],
+    "persistent": false
+},
+
     "icons": {
         "64": "icon.png", 
         "16": "icon.png"
-    }, 
-    "background": {
-        "scripts": ["background.js"]
     },
-    "permissions": [
-        "<all_urls>"
-    ],
     "content_scripts": [
         {
             "matches": ["http://*/*", "https://*/*"],
             "js": ["myscript.js"]
 
         }
-    ],
+    ]
     
-    "content_security_policy": "script_src 'self' 'unsafe-eval' http://www.editpad.org; object-src 'self'"
+
 }
 
 
