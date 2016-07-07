@@ -3,19 +3,51 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<script src='background.js'></script>
+
 <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
 <style type="text/css">
-    h3 {
-        text-align: center; 
+    body {
+         font-family: 'Oswald';
+    }
+    input {
         font-family: 'Oswald';
+        font-size: 20px; 
 }
 </style>
 </head>
 <body>
-<div id='text'>
-<h3>FOR LIFE</h3>
-</div>
-<img src="https://pbs.twimg.com/profile_images/623574366639357952/L2gtInkc.png" alt="New Tatt" style="width:200px;height:200px;">
+<!-- <div id='text'>
+<h3>Whaddya wanna know?</h3>
+</div> -->
+<form action="www.editpad.org" onsubmit="myFunction()">
+ <input type="text" name="search" placeholder="...whaddya wanna know?" padding-left="5px"><br><br>
+  <input type="checkbox" name="gender" value="male">I hate parties
+</form>
+
+<!-- <button onclick="myFunction()">Try it</button>
+ -->
+
+<!-- <script>
+function myFunction() {
+    var myWindow = window.open("http://www.editpad.org","", "width=400,height=400,top=400");
+}
+</script> -->
+
+<!-- <img src="https://pbs.twimg.com/profile_images/623574366639357952/L2gtInkc.png" alt="New Tatt" style="width:200px;height:200px;"> -->
 
 </body>
 </html>
+
+
+
+
+<!-- <script>
+    chrome.browserAction.onClicked.addListener(function(window) {
+        chrome.windows.onCreated.addListener(function(enumerated string ["popup"]) {
+            chrome.windows.create({'url': chrome.extension.getURL('https://docs.google.com/document/d/1PCGg9gzbJ16fRLYiJxQgItRurQrL8_wCxRMi8fYgGLw/edit')}, function(window) {
+            });
+        });
+    });
+</script> -->
