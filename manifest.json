@@ -1,0 +1,23 @@
+{
+
+    "name": "TutorialPARTY!!!", 
+    "version": "1.0", 
+    "manifest_version": 2, 
+    "description": "Do you like to party?",
+    "browser_action": {
+        "default_icon": "icon.jpg",
+        "default_popup": "mypopup.html"
+    },
+    "icons": {
+        "64": "icon.jpg", 
+        "16": "icon.jpg"
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://*/*"],
+            "js": ["jquery.js", "myScript.js"]
+
+        }
+    ]
+
+}
